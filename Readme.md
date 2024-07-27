@@ -7,7 +7,7 @@ This will work with aiohttp, flask, fastapi and starlette easily and pretty much
 as so the process closes after the server closes which allows for propper cleanup.
 
 ```python
-# An example with aiohttp 
+# An example with aiohttp inspired by https://stem.torproject.org/tutorials/over_the_river.html
 
 from onionHost import on_launch
 from aiohttp import web 
