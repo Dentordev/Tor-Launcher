@@ -19,7 +19,7 @@ route = web.RouteTableDef()
 # Allow me to bring in stem's classic example on how to do this
 @route.get("/")
 async def hiGrandma(request:web.Request):
-    return web.Response(text="<html><body><h1>Hi Grandma</h1></body></html>")
+    return web.Response(body=b"<html><body><h1>Hi Grandma</h1></body></html>", content_type="text/html")
 
 
 # NOTE: on_launch assumes you have tor.exe setup as an enviornment variable. This is not hard to setup 
